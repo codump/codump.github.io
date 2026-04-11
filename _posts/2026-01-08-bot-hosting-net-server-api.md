@@ -1,6 +1,7 @@
 ---
 title: Discord.js basic Bot-Hosting.net server API slash commands
-description: >-
+description: |
+  This snippet enables your Discord.js bot to interact with your Bot-Hosting.net server. It allows you to retrieve server information and execute commands such as start, restart, and stop directly from Discord.
   
 author: kip
 github_star:

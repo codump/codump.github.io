@@ -1,6 +1,7 @@
 ---
 title: Check URL via VirusTotal API in Node.js
-description: >-
+description: |
+  To scan URLs for bad content we can use the VirusTotal API. Bellow is a snippet that does exactly that. More info: https://docs.virustotal.com/docs/api-overview
   
 author: kip
 github_star: 

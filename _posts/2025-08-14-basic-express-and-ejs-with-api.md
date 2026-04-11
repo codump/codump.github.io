@@ -2,6 +2,8 @@
 title: Basic Express and EJS with API
 description: |
   Kickstart your Node.js applications with a solid foundation that combines simplicity, performance, and security. This starter project comes preconfigured with Express for efficient server-side development, EJS for clean and dynamic templating, Helmet to strengthen HTTP headers and protect against common vulnerabilities, and express-rate-limit to guard against brute-force attacks and excessive requests. Whether you’re building a personal side project or a production-ready service, this setup saves you time by handling essential configurations out of the box. It’s lightweight, easy to understand, and ready to be extended so you can focus on creating features instead of reinventing the basics.
+home_preview: |
+  Kickstart your Node.js applications with a solid foundation that combines simplicity, performance, and security. This starter project comes preconfigured with Express for efficient server-side development, EJS for clean and dynamic templating, Helmet to strengthen HTTP headers and protect against common vulnerabilities, and express-rate-limit to guard against brute-force attacks and excessive requests. Whether you’re building a personal side project or a production-ready service, this setup saves you time by handling essential configurations out of the box. It’s lightweight, easy to understand, and ready to be extended so you can focus on creating features instead of reinventing the basics.
   <br/>
   <button class="blueButton" onclick="window.open('https://codump.github.io/demo/basic-express-ejs-with-api/')">Demo</button> <button class="greenButton" onclick="window.open('https://github.com/codump/basic-express-ejs-with-api/')">See code</button>
   <br/><br/>

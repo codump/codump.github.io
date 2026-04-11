@@ -4,6 +4,10 @@ description: |
   @codump/conlog is a JavaScript library designed to enhance terminal logging by introducing colors, styles, and advanced formatting to standard console output. It facilitates easier debugging and monitoring in JavaScript/TypeScript environments by supporting namespace grouping and various log levels for visual distinction. For more details, visit the package on npm.
   <br/><br/>
   <button class="blueButton" onclick="window.open('https://codump.github.io/conlog/')">Demo</button> <button class="greenButton" onclick="window.open('https://www.npmjs.com/package/@codump/conlog')">See code</button>
+home_preview:  |
+  @codump/conlog is a JavaScript library designed to enhance terminal logging by introducing colors, styles, and advanced formatting to standard console output. It facilitates easier debugging and monitoring in JavaScript/TypeScript environments by supporting namespace grouping and various log levels for visual distinction. For more details, visit the package on npm.
+  <br/><br/>
+  <button class="blueButton" onclick="window.open('https://codump.github.io/conlog/')">Demo</button> <button class="greenButton" onclick="window.open('https://www.npmjs.com/package/@codump/conlog')">See code</button>
 image:
   path: /assets/img/conlog.gif
   lqip: "data:image/webp;base64,UklGRk..."

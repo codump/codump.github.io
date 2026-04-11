@@ -1,6 +1,7 @@
 ---
 title: Close a menu or element when clicked anywhere
-description: >-
+description: |
+  Often we have a menu, modal or any other element that we want to close when you click outside of it. Therefor this little snippet that’s using jQuery.
   
 author: kip
 github_star: 

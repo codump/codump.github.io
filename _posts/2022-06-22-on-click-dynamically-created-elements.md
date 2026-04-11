@@ -1,6 +1,7 @@
 ---
 title: On click dynamically created elements
-description: >-
+description: |
+  When an element is dynamically created in the document/website the normal $('.addedElement').click(function(e){ / click function doesn’t work. The snippet below will solve that issue for u. When clicked on any element, dynamically added or not, with the class addedElement will run the function.
   
 author: kip
 github_star: 

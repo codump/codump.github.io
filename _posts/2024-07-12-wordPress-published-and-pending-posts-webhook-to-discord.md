@@ -1,6 +1,7 @@
 ---
 title: WordPress published and pending posts webhook to discord
-description: >-
+description: |
+  I needed a WordPress to discord webhook plugin but those that were available didn’t work. So I made this snippet that will post to discord if there is a pending or published post. How to install: go to the wp-content/plugins/ folder and create a new folder called post-to-discord. Create a new file called post-to-discord.php and paste the snippet into it. Now you can go to your WP settings -> general and you will find 2 fields to submit the webhooks.
   
 author: kip
 github_star: 

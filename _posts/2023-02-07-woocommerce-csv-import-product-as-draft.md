@@ -1,6 +1,7 @@
 ---
 title: Woocommerce CSV import products as draft
-description: >-
+description: |
+  I was helping a buddy with his Woocommerce webshop to import products via a csv file. The problem we encountered was that the products are imported and directly published. Therefor I made this snippet as a must-use plugin to import them as a draft. First create a new folder called mu-plugins inside the wp-content folder. Then create a new script inside the mu-plugins folder called draft-import.php and paste the snippet in it, save and u are done.
   
 author: kip
 github_star: 

@@ -11,8 +11,8 @@
     {%- assign content = post.content | replace: '<a', '<span' | replace: '</a>', '</span>'  | replace: '<h3', '<span style="display: block;font-weight: bold;color: #cececeff;margin-top: 0.5rem;"' | replace: '</h3>', '</span>' -%}
     {{ content }}
   </article>
-{%- elsif post.description -%}
-  {{ post.description }}
+{%- elsif post.home_preview -%}
+  {{ post.home_preview }}
 {%- else -%}
   {%- assign content = post.content -%}
 

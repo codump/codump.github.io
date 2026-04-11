@@ -1,6 +1,7 @@
 ---
 title: Using JSON to save and display your posts on GitHub pages
-description: >-
+description: |
+  CWhen using GitHub pages, you can’t use a PHP back-end to handle and store your posts. Therefore I made this script that uses a JSON file to store the data of my posts. And then displays it on the Codump GitHub page you are looking at right now. Yes, this post is also stored in a JSON file and processed by JavaScript to display it to you. (not true anymore, using jekyll now, yet it stays a handy script)
   
 author: kip
 github_star: codump/save-and-display-posts-on-github-pages
