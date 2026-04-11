@@ -120,7 +120,7 @@ comments:
     repo_id: 'R_kgDOR_MoRw'           # Get this from giscus.app
     category: 'General'           # Or 'General'
     category_id: 'DIC_kwDOR_MoR84C6n9K'      # Get this from giscus.app
-    mapping: 'title'                 # Keeps comments unique to each post URL
+    mapping: 'og:title'                 # Keeps comments unique to each post URL
     strict: 0
     input_position: 'bottom'
     lang: en
