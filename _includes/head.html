@@ -13,7 +13,14 @@
     {% seo title=false %}
   {%- endcapture -%}
 
-  <!-- Setup Open Graph image -->
+  {% if page.layout == 'home' %}
+    {% assign old_og_title = 'property="og:title" content="' | append: site.title | append: '"' %}
+    {% assign new_og_title = 'property="og:title" content="' | append: site.slogan | append: '"' %}
+    {% assign old_twitter_title = 'property="twitter:title" content="' | append: site.title | append: '"' %}
+    {% assign new_twitter_title = 'property="twitter:title" content="' | append: site.slogan | append: '"' %}
+    {% assign seo_tags = seo_tags | replace: old_og_title, new_og_title %}
+    {% assign seo_tags = seo_tags | replace: old_twitter_title, new_twitter_title %}
+  {% endif %}
 
   {% if page.image %}
     {% assign src = page.image.path | default: page.image %}
@@ -30,8 +37,6 @@
     {% endunless %}
 
   {% elsif site.social_preview_image %}
-    HIER
-    <meta property="og:image" content="{{ site.default_social_preview_image }}" />
     {%- capture img_url -%}
       {% include media-url.html src=site.social_preview_image absolute=true %}
     {%- endcapture -%}
@@ -61,8 +66,8 @@
   {% endif %}
 
   <title>
-    {{- site.title -}} &nbsp;
     {%- unless page.layout == 'home' -%}
+      {{- site.title -}} &nbsp;
       {%- capture title -%}
         {%- if page.collection == 'tabs' -%}
           {%- assign tab_key = page.title | downcase -%}
@@ -73,6 +78,9 @@
       {%- endcapture -%}
       {{- title -}}
     {%- endunless -%}
+    {%- if page.layout == 'home' -%}
+      {{- site.title -}} &nbsp;{{- site.slogan -}}
+    {%- endif -%}
   </title>
 
   {% include_cached favicons.html %}
