@@ -105,6 +105,7 @@ toc: true
 
 comments:
   # Global switch for the post-comment system. Keeping it empty means disabled.
+  active: giscus
   provider: giscus # [disqus | utterances | giscus]
   # The provider options are as follows:
   disqus:
@@ -119,7 +120,7 @@ comments:
     repo_id: 'R_kgDOR_MoRw'           # Get this from giscus.app
     category: 'General'           # Or 'General'
     category_id: 'DIC_kwDOR_MoR84C6n9K'      # Get this from giscus.app
-    mapping: 'url'                 # Keeps comments unique to each post URL
+    mapping: 'pathname'                 # Keeps comments unique to each post URL
     strict: 0
     input_position: 'bottom'
     lang: site.lang
