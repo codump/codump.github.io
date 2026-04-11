@@ -30,6 +30,8 @@
     {% endunless %}
 
   {% elsif site.social_preview_image %}
+    HIER
+    <meta property="og:image" content="{{ site.default_social_preview_image }}" />
     {%- capture img_url -%}
       {% include media-url.html src=site.social_preview_image absolute=true %}
     {%- endcapture -%}
@@ -46,6 +48,9 @@
     {% assign old_meta_clip = '<meta name="twitter:card" content="summary" />' %}
     {% assign new_meta_clip = og_image | append: twitter_image %}
     {% assign seo_tags = seo_tags | replace: old_meta_clip, new_meta_clip %}
+  {% else %}
+    <meta property="og:image" content="https://raw.githubusercontent.com/codump/.github/refs/heads/main/profile/108196527.jpg">
+    <meta property="twitter:image" content="https://raw.githubusercontent.com/codump/.github/refs/heads/main/profile/108196527.jpg">
   {% endif %}
 
   {{ seo_tags }}
