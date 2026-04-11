@@ -122,7 +122,7 @@ comments:
     category_id: 'DIC_kwDOR_MoR84C6n9J'      # Get this from giscus.app
     mapping: 'og:title'                 # Keeps comments unique to each post URL
     strict: 0
-    input_position: 'bottom'
+    input_position: 'top'
     lang: en
     reactions_enabled: '1'
 
