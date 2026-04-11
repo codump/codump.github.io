@@ -422,6 +422,16 @@ main article .post-tail-wrapper {
   opacity: 0.7 !important;
 }
 
+.gh-star-fix {
+  line-height: 0;
+  display: flex;
+  align-items: center;
+  transform: translateY(0px);
+}
+.gh-star-fix a.github-button {
+  margin: 0 !important;
+}
+
 .post-navigation .btn:hover {
   background: #0f65bb !important;
 }

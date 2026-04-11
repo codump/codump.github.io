@@ -3,6 +3,8 @@ title: User editable full width cover image with position input and preview
 description: >-
   
 author: kip
+github_star: codump/user-edit-full-width-cover-image
+github_gist: 
 date: 2022-07-25 18:31:00 +0200
 categories: [Coding, Script]
 tags: [jQuery]

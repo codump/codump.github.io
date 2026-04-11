@@ -9,13 +9,16 @@ image:
   lqip: "data:image/webp;base64,UklGRk..."
   
 author: kip
+github_star: codump/conlog
+github_gist: 
 date: 25-08-21 15:15:00 +0200
+last_modified_at: 26-04-11 14:30:00 +0200
 categories: [Project, ConLog]
 tags: [npm, console, log, Node.js, JavaScript]
 pin: true
 full_text: false
 ---
-### ![dependencies](https://badgen.net/static/dependencies/0/green?cache-control=no-cache) <sup>👈🥳</sup> ![npm v](https://badgen.net/npm/v/@codump/conlog?cache-control=no-cache) ![GitHub Clones](https://img.shields.io/badge/dynamic/json?color=success&label=Clones&cache-control=no-cache&query=count&url=https://gist.githubusercontent.com/kipBO/6d2bb29f973d5b61cae5b6c3b174f8bf/raw/clone.json&logo=github) ![npm downloads](https://badgen.net/npm/dt/@codump/conlog?cache-control=no-cache) ![last commit](https://badgen.net/github/last-commit/codump/conlog?cache-control=no-cache) 
+### ![dependencies](https://badgen.net/static/dependencies/0/green?cache-control=no-cache) <sup>👈🥳</sup> ![npm v](https://badgen.net/npm/v/@codump/conlog?cache-control=no-cache) ![GitHub Clones](https://img.shields.io/badge/dynamic/json?color=success&label=Clones&cache-control=no-cache&query=count&url=https://gist.githubusercontent.com/kipBO/6d2bb29f973d5b61cae5b6c3b174f8bf/raw/clone.json&logo=github) ![npm downloads](https://badgen.net/npm/dt/@codump/conlog?cache-control=no-cache) ![last commit](https://badgen.net/github/last-commit/codump/conlog?cache-control=no-cache)
 
 
 @codump/conlog is a JavaScript library designed to enhance terminal logging by introducing colors, styles, and advanced formatting to standard console output. It facilitates easier debugging and monitoring in JavaScript/TypeScript environments by supporting namespace grouping and various log levels for visual distinction. For more details, visit the package on npm.

@@ -3,6 +3,8 @@ title: Version push to cache in JavaScript
 description: >-
   
 author: kip
+github_star: 
+github_gist: kipBO/cd4a9e3cd714f366430939bb481f3d29
 date: 23-02-11 18:51:00 +0200
 categories: [Coding, Snippet]
 tags: [JavaScript, CSS, cache]

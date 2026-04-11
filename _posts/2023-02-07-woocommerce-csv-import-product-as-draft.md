@@ -3,6 +3,8 @@ title: Woocommerce CSV import products as draft
 description: >-
   
 author: kip
+github_star: 
+github_gist: kipBO/e5f3b46d96e0ad4574a7ea1ddd60ee3a
 date: 23-02-07 12:01:00 +0200
 categories: [Coding, WooCommerce, Snippet]
 tags: [WooCommerce, Webshop, PHP, .csv]

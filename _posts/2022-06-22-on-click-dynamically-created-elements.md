@@ -3,6 +3,8 @@ title: On click dynamically created elements
 description: >-
   
 author: kip
+github_star: 
+github_gist: codump/a1748630880c7ea1dd5500312b2743a2
 date: 2022-07-24 20:55:00 +0200
 categories: [Coding, Snippet]
 tags: [jQuery]

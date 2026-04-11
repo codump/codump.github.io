@@ -3,6 +3,8 @@ title: Discord.js basic Bot-Hosting.net server API slash commands
 description: >-
   
 author: kip
+github_star:
+github_gist: kipBO/fa798b7d6cc0acd05403b642cb3b9bd9
 date: 26-01-08 16:01:00 +0200
 categories: [Coding, Snippet, Bot]
 tags: [discord.js, discord, bot-hosting.net, API, bot, d.js v14, JavaScript]

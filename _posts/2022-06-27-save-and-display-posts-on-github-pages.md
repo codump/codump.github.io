@@ -3,6 +3,8 @@ title: Using JSON to save and display your posts on GitHub pages
 description: >-
   
 author: kip
+github_star: codump/save-and-display-posts-on-github-pages
+github_gist: 
 date: 2022-07-27 01:18:00 +0200
 categories: [Coding, Script]
 tags: [jQuery, JSON, JavaScript]

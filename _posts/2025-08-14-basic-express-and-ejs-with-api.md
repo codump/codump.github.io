@@ -10,6 +10,8 @@ image:
   lqip: "data:image/webp;base64,UklGRk..."
   
 author: kip
+github_star: codump/basic-express-ejs-with-api
+github_gist: 
 date: 25-08-14 14:44:00 +0200
 categories: [Coding, Script]
 tags: [Express, EJS, Node.js, helmet, JWT, Security, JavaScript]

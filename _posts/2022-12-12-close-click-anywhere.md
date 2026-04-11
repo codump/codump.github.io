@@ -3,6 +3,8 @@ title: Close a menu or element when clicked anywhere
 description: >-
   
 author: kip
+github_star: 
+github_gist: kipBO/c3637990fc1fff89dead170ced012789
 date: 2022-12-02 11:11:00 +0200
 categories: [Coding, Snippet]
 tags: [jQuery]

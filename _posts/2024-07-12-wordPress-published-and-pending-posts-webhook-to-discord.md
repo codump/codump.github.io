@@ -3,6 +3,8 @@ title: WordPress published and pending posts webhook to discord
 description: >-
   
 author: kip
+github_star: 
+github_gist: kipBO/c9d3780c5ca6680ac24670b36ee649c8
 date: 24-07-12 02:24:00 +0200
 categories: [Coding, WordPress, Snippet]
 tags: [WordPress, discord, PHP]
