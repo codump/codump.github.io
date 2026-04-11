@@ -17,7 +17,6 @@ timezone:
 title: ♻ Codump - Dumped codes ♻ # the main title
 
 tagline: # it will display as the subtitle
-social_preview_image: https://raw.githubusercontent.com/codump/.github/refs/heads/main/profile/108196527.jpg
 
 description: >- # used by seo meta and the atom feed
   Scripts and snippets of code dumped to recycle over and over again. I wanted to share my codes with you all and the generations that come. Try and have fun with it! It gives me joy that I could help you create something. I'm happy you're one of the makers group. Trying to build codes and making a better world! ✌️😎
@@ -33,6 +32,7 @@ social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
   name: codump
+  image: https://raw.githubusercontent.com/codump/.github/refs/heads/main/profile/108196527.jpg
   email: # change to your email address
   fediverse_handle: # fill in your fediverse handle. E.g. "@username@domain.com"
   links:
