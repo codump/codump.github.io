@@ -115,7 +115,7 @@ comments:
     issue_term: # < url | pathname | title | ...>
   # Giscus options › https://giscus.app
   giscus:
-    repo: 'your-username/your-repo-name' # e.g., 'cotes2020/jekyll-theme-chirpy'
+    repo: 'codump/codump.github.io' # e.g., 'cotes2020/jekyll-theme-chirpy'
     repo_id: 'R_kgDOXXXXXXXX'           # Get this from giscus.app
     category: 'Announcements'           # Or 'General'
     category_id: 'DIC_kwDOXXXXXXX'      # Get this from giscus.app
