@@ -21,6 +21,7 @@ function ConLogColorToHTML (syntaxObject) {
   syntaxObject = syntaxObject.replaceAll(`[35m`, `<span style='color:purple;'>`)
   syntaxObject = syntaxObject.replaceAll(`[36m`, `<span style='color:#00b8e6;'>`)
   syntaxObject = syntaxObject.replaceAll(`[37m`, `<span style='color:white;'>`)
+  syntaxObject = syntaxObject.replaceAll(`[90m`, `<span style='color:#808080;'>`)
   syntaxObject = syntaxObject.replaceAll(`[2m`, `<span style='opacity: 0.6;'>`)
 
   syntaxObject = syntaxObject.replaceAll(`[0m`, `</span>`)
@@ -52,12 +53,12 @@ document.addEventListener("DOMContentLoaded", () => {
         stringInput = stringInput.replace(/'\s*$/, ``) // last '
         stringInput = stringInput.replace(/^`/, '') // first `
         stringInput = stringInput.replace(/`\s*$/, ``) // last `
-        
+
         resultType = resultType.replaceAll(`\``, ``)
         resultType = resultType.replaceAll(`'`, ``)
         resultType = resultType.replaceAll(`"`, ``)
         //alert(`pre: ${resultType}`)
-        
+
         if(resultType == 1 || resultType == ' er' || resultType == ` err` || resultType == ' error') {
           ConLog(stringInput, 1)
         } else if(resultType ==  2 || resultType == ` ok`) {
@@ -111,10 +112,10 @@ document.addEventListener("DOMContentLoaded", () => {
     var n, e, t = "";
     for (e = 0; e < arguments.length; e++)
       t += '<span class="log-' + typeof (n = arguments[e]) + '">',
-      "object" == typeof n && "object" == typeof JSON && "function" == typeof JSON.stringify ? 
+      "object" == typeof n && "object" == typeof JSON && "function" == typeof JSON.stringify ?
       t += JSON.stringify(n) : t += n, t += "</span>&nbsp;"
       t = ConLogColorToHTML(t)
-      outputLog.innerHTML += t + "<br>", 
+      outputLog.innerHTML += t + "<br>",
     console.old.apply(void 0, arguments)
   }
 } (document.log);
@@ -122,7 +123,7 @@ document.addEventListener("DOMContentLoaded", () => {
 ConLogStartMsg(true)
 ConLog(`String without a type being set`)
 ConLog({ object: true, withoutType: true, conLog: [`system`, `error`, `ok`, `warning`, `object`] })
-ConLog(`test1`, 1) 
+ConLog(`test1`, 1)
 ConLog(`test2`, 2)
 ConLog(`test3`, 3)
 ConLog({ userId: 123, status: `active`, permissions: [`read`, `write`] }, 4)
