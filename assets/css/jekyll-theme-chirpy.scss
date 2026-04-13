@@ -398,6 +398,23 @@ main article .post-tail-wrapper {
   background: #06923c;
   color: #fff;
 }
+.greyButton {
+  display: block;
+  padding: 0.5rem 1rem;
+  margin-right: 0.5rem;
+  margin-top: 1rem;
+  background: #555;
+  float: left;
+  outline: none;
+  border: 0;
+  border-radius: 4px;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.greyButton:hover {
+  background: #444;
+}
 
 .version-badge {
   display: inline-block;

@@ -37,7 +37,7 @@ comments: true
   - It configures automatically to your `ConLogSet()` settings.
   - To overwrite and send a hook even when ConLogInit is turned off. Have `ConLogWebhook()` set and `force-hook` in your message.
 
-<button class="blueButton" onclick="window.open('https://codump.github.io/conlog/')">Demo</button> <button class="greenButton" onclick="window.open('https://www.npmjs.com/package/@codump/conlog')">See code</button>
+<button class="blueButton" onclick="window.open('https://codump.github.io/conlog/')">Demo</button> <button class="greenButton" onclick="window.open('https://www.npmjs.com/package/@codump/conlog')">See code</button> <button class="greyButton" onclick="window.open('https://codump.github.io/conlog/docs/')">Docs</button>
 <br/><br/>
 ## Run `npm i @codump/conlog`
 

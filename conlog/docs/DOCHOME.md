@@ -1,7 +1,7 @@
 # What is it!?
 
 **ConLog()** provides a customized console logging utility for Node.js and browsers console.
-Instead of relying only on `console.log`, `console.error`, etc., it adds a **configurable, global logging system** with colored outputs, structured types, and some convenience features.
+Instead of relying only on `console.log`, `console.error`, etc., it adds a **configurable, global logging system** with colored outputs, structured types, and some convenience features like webhook notifications.
 
 ## The main idea
 - Centralize logging configuration (enable/disable globally).
