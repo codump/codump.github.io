@@ -15,7 +15,7 @@ script_includes:
 
 <article class="px-1" data-toc="{{ enable_toc }}">
   <header>
-    <h1 data-toc-skip>{{ page.title }}</h1>
+    <h1 data-toc-skip>{{ page.title }}{% if page.update %} <small><span class='version-badge'>{{ page.updateversion }}</span></small>{% endif %}</h1>
 
     <div class="post-meta text-muted">
       <div class="d-flex justify-content-between align-items-center flex-wrap">

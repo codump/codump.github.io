@@ -12,7 +12,7 @@ pin: false
 full_text: true
 ---
 For codump projects, I want to use the JSDoc standard to ensure our JavaScript codebase remains highly maintainable and easy to navigate. By consistently documenting types, optional parameters, and asynchronous operations with instant IntelliSense support and clear API expectations within the editor.
-<br/><br/>
+
 This structured approach serves as a lightweight alternative to TypeScript, allowing to maintain high code quality and generate professional documentation automatically without adding extra complexity to the build process. `ConLog()` is the prime example!
 
 ```js
