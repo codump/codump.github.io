@@ -1,5 +1,5 @@
 ---
-title: "ConLog() console log management and utility tool for JavaScript"
+title: "ConLog() console log management and utility tool for JavaScript <small><span class='version-badge'>v2.1.1</span></small>"
 description: |
   @codump/conlog is a JavaScript library designed to enhance terminal logging by introducing colors, styles, and advanced formatting to standard console output. It facilitates easier debugging and monitoring in JavaScript/TypeScript environments by supporting namespace grouping and various log levels for visual distinction. For more details, visit the package on npm.
   <br/><br/>
@@ -16,7 +16,7 @@ author: kip
 github_star: codump/conlog
 github_gist: 
 date: 25-08-21 15:15:00 +0200
-last_modified_at: 26-04-11 14:30:00 +0200
+last_modified_at: 26-04-13 19:49:00 +0200
 categories: [Project, ConLog]
 tags: [npm, console, log, Node.js, JavaScript]
 pin: true
@@ -27,6 +27,13 @@ comments: true
 
 
 @codump/conlog is a JavaScript library designed to enhance terminal logging by introducing colors, styles, and advanced formatting to standard console output. It facilitates easier debugging and monitoring in JavaScript/TypeScript environments by supporting namespace grouping and various log levels for visual distinction. For more details, visit the package on npm.
+
+### [UPDATED] `v2.1.1`
+- Timestamp added for everything except an object without type being set.
+- Webhook support to send your logs to for example discord.
+  - Supported hook providers: only discord for now, but let us know if you want another one to be added.
+  - It configures automatically to your `ConLogSet()` settings.
+  - To overwrite and send a hook even when ConLogInit is turned off. Have `ConLogWebhook()` set and `force-hook` in your message.
 
 <button class="blueButton" onclick="window.open('https://codump.github.io/conlog/')">Demo</button> <button class="greenButton" onclick="window.open('https://www.npmjs.com/package/@codump/conlog')">See code</button>
 <br/><br/>
@@ -87,7 +94,7 @@ Make sure the script where you are importing it has the module type.
  * In the repo example.js is set with require(`./lib/`) but copy paste the code below
  * when you use it after a `npm install @codump/conlog`
  */
-const { ConLogInit, ConLogSet, ConLog, ConLogStartMsg } = require(`@codump/conlog`)
+const { ConLogInit, ConLogSet, ConLogWebhook, ConLog, ConLogStartMsg } = require(`@codump/conlog`)
 
 // ================================
 // INITIALIZATION
@@ -127,6 +134,23 @@ ConLogSet({error: true, ok: true, warning: true, object: true, color: true})
  * @param {boolean} status - Whether to display startup message (default: false)
  */
 ConLogStartMsg(true)
+
+/**
+ * Webhooks are now supported to send your critical logs to your preffered platform.
+ * 
+ * @param {boolean} status - Enable or disable webhook logging
+ *   - true: Enable all ConLog output to the specified webhook URL
+ *   - false: Completely disable all ConLog output to webhooks (default)
+ * @param {string} provider - The webhook provider (e.g., "discord")
+ * @param {string} url - The webhook URL to send messages to
+ * 
+ * Supported hook providers: only discord for now, but let us know if you want another one to be added.
+ * It configures automatically to your `ConLogSet()` settings.
+ * To overwrite and send a hook even when ConLogInit is turned off.
+ * Have `ConLogWebhook()` set and `force-hook` in your message.
+ */
+ConLogWebhook(true, `discord`, `https://discord.com/api/webhooks/your-hook`)
+ConLog(`force-hook This message will be send to your discord webhook.`)
 
 // ================================
 // LOGGING EXAMPLES
