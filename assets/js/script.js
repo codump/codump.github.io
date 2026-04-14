@@ -5,10 +5,10 @@ $(window).on('load', function () {
 		$(this).addClass("loadOK").delay(500).queue(function(next2) {
 			$("#loadtxt2 span").css('color','#00b646');
 			$("#loadtxt1").animate({
-				marginLeft: '5.05vw'
+				marginLeft: '7.8rem'
 			}, 500);
 			$("#loadtxt2").animate({
-				marginLeft: '10vw'
+				marginLeft: '15.8rem'
 			}, 500);
 			next2();
 		});

@@ -1,7 +1,7 @@
 ---
 title: "ConLog() console log management and utility tool for JavaScript"
 update: true
-updateversion: "v2.1.1"
+updateversion: "v2.1.2"
 description: |
   @codump/conlog is a JavaScript library designed to enhance terminal logging by introducing colors, styles, and advanced formatting to standard console output. It facilitates easier debugging and monitoring in JavaScript/TypeScript environments by supporting namespace grouping and various log levels for visual distinction. For more details, visit the package on npm.
 
@@ -18,7 +18,7 @@ author: kip
 github_star: codump/conlog
 github_gist: 
 date: 25-08-21 15:15:00 +0200
-last_modified_at: 26-04-13 19:49:00 +0200
+last_modified_at: 26-04-14 15:14:00 +0200
 categories: [Project, ConLog]
 tags: [npm, console, log, Node.js, JavaScript]
 pin: true
