@@ -30,12 +30,13 @@ comments: true
 
 @codump/conlog is a JavaScript library designed to enhance terminal logging by introducing colors, styles, and advanced formatting to standard console output. It facilitates easier debugging and monitoring in JavaScript/TypeScript environments by supporting namespace grouping and various log levels for visual distinction. For more details, visit the package on npm.
 
-### [UPDATED] 13th April 2026 `v2.1.1`
+### [UPDATED] 14th April 2026 `v2.1.2`
 - Timestamp added for everything except an object without type being set.
 - Webhook support to send your logs to for example discord.
   - Supported hook providers: only discord for now, but let us know if you want another one to be added.
   - It configures automatically to your `ConLogSet()` settings.
   - To overwrite and send a hook even when ConLogInit is turned off. Have `ConLogWebhook()` set and `force-hook` in your message.
+- Re-declaring ConLog function to force VS Code IntelliSense to provide automatic parentheses() on Enter/Tab for easier use.
 
 <button class="blueButton" onclick="window.open('https://codump.github.io/conlog/')">Demo</button> <button class="greenButton" onclick="window.open('https://www.npmjs.com/package/@codump/conlog')">See code</button> <button class="greyButton" onclick="window.open('https://codump.github.io/conlog/docs/')">Docs</button>
 <br/><br/>
