@@ -458,6 +458,9 @@ header h1 .version-badge {
   object-position: 50% !important;
   opacity: 0.7 !important;
 }
+.post-preview img[src*="multi-bot.jpg"] {
+  object-position: 30%;
+}
 
 .gh-star-fix {
   line-height: 0;
