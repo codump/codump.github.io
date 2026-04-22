@@ -1,5 +1,5 @@
 $(window).on('load', function () {
-  if (sessionStorage.getItem('loaderShown')) {
+  if (!sessionStorage.getItem('loaderShown')) {
     $('#load').show();
     $('#loadtxt1')
       .removeClass('loadOK')
