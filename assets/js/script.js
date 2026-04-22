@@ -1,7 +1,7 @@
-$(window).on('load', function () {
-  if (sessionStorage.getItem('loaderShown')) {
-    $('#load').hide();
-  } else {
+if (sessionStorage.getItem('loaderShown')) {
+  $('#load').hide();
+} else {
+  $(window).on('load', function () {
     $('#loadtxt1')
       .removeClass('loadOK')
       .delay(1500)
@@ -32,5 +32,5 @@ $(window).on('load', function () {
     });
 
     sessionStorage.setItem('loaderShown', 'true');
-  }
-});
+  });
+}
