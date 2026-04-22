@@ -1,7 +1,6 @@
-if (sessionStorage.getItem('loaderShown')) {
-  $('#load').hide();
-} else {
-  $(window).on('load', function () {
+$(window).on('load', function () {
+  if (sessionStorage.getItem('loaderShown')) {
+    $('#load').show();
     $('#loadtxt1')
       .removeClass('loadOK')
       .delay(1500)
@@ -32,5 +31,5 @@ if (sessionStorage.getItem('loaderShown')) {
     });
 
     sessionStorage.setItem('loaderShown', 'true');
-  });
-}
+  }
+});
