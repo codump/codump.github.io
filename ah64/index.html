@@ -1,0 +1,618 @@
+<!doctype html>
+<html>
+  <head>
+    <title>DCS AH-64 checklist</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Welcome to the AH-64 checklist, a comprehensive guide designed to demystify the myriad buttons and switches within the cockpit of the AH-64 Apache. This checklist is your key to understanding the functions associated with each button, ensuring that you have a clear and concise reference for operating this cutting-edge attack helicopter."
+    />
+    <meta name="keywords" content="DCS, AH-64" />
+    <meta name="copyright" content="kipBO" />
+    <meta name="author" content="kipBO" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      property="og:image"
+      content="https://upload.wikimedia.org/wikipedia/commons/2/21/Dutch_Air_Force_Boeing_AH-64D_Apache_Longbow_Geerlings-1.jpg"
+    />
+    <!-- Include this to make the og:image larger -->
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link
+      rel="mask-icon"
+      href="https://github.githubassets.com/pinned-octocat.svg"
+      color="#000000"
+    />
+    <link
+      rel="alternate icon"
+      class="js-site-favicon"
+      type="image/png"
+      href="https://github.githubassets.com/favicons/favicon.png"
+    />
+    <link
+      rel="icon"
+      class="js-site-favicon"
+      type="image/svg+xml"
+      href="https://github.githubassets.com/favicons/favicon.svg"
+    />
+    <script
+      src="https://kit.fontawesome.com/f072e2e626.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <link rel="stylesheet" href="style.css?v=1.0.21m" />
+  </head>
+  <body onload="">
+    <div id="wrapper">
+      <div id="left">
+        <div id="Lmenu">
+          <h2 class="first">
+            Settings
+            <button id="fullscreenBtn" onclick="openFullscreen()">
+              <i class="fa-solid fa-expand"></i> Fullscreen
+            </button>
+          </h2>
+          <div class="setDiv">
+            <span>Font size:</span> <span id="fontSize">16</span><br />
+            <input
+              class="none"
+              type="range"
+              min="12"
+              max="24"
+              value="16"
+              id="textSlider"
+              step="0.5"
+            /><br />
+            <label for="info-all">Show/hide all extra information:</label>
+            <input type="checkbox" id="info-all" name="info-all" /> <br />
+            <!--Test value: <span id="test">testDiv</span>-->
+            Kneeboard:
+            <input id="uploader" type="file" webkitdirectory multiple />
+          </div>
+          <h2>AH-64 shortcuts</h2>
+          <a href="#prestart" class="greenButton"
+            ><i class="fa-regular fa-snowflake fa-fw sideIcon"></i> Cold
+            start</a
+          >
+          <a href="#atc" class="darkGreenButton"
+            ><i class="fa-solid fa-tower-cell fa-fw sideIcon"></i> ATC
+            procedures</a
+          >
+        </div>
+      </div>
+
+      <div id="right">
+        <div id="main">
+          <a name="top" class="anchor"></a>
+          <h1>
+            <i
+              class="fa-solid fa-helicopter fa-flip-horizontal rotate-180 fa-fw"
+            ></i>
+            DCS AH-64 checklist <i class="fa-solid fa-helicopter fa-fw"></i>
+          </h1>
+          Welcome to the AH-64 checklist, a comprehensive guide designed to
+          demystify the myriad buttons and switches within the cockpit of the
+          AH-64 Apache. This checklist is your key to understanding the
+          functions associated with each button, ensuring that you have a clear
+          and concise reference for operating this cutting-edge attack
+          helicopter. The checklist is specifically tailored for optimal use on
+          a compact tablet, ensuring convenience for easy accessibility during
+          your flight.
+          <br />
+          <a name="prestart" class="anchor"></a>
+          <hr />
+          <h1>
+            VERIFY CHECK &nbsp;<a class="uncheckstart"
+              >Uncheck all in start list.</a
+            >
+          </h1>
+          <table class="starttable">
+            <tr>
+              <td class="std1">1</td>
+              <td class="std2">
+                <input type="checkbox" class="startlist" id="start1v" />
+                <label for="start1v" class="startlabel"> Doors - CLOSED.</label>
+              </td>
+            </tr>
+            <tr>
+              <td class="std1">2</td>
+              <td class="std2">
+                <input type="checkbox" class="startlist" id="start2v" />
+                <label for="start2v" class="startlabel">
+                  Lighting, day = WHT + BRT.</label
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="std1">3</td>
+              <td class="std2">
+                <input type="checkbox" class="startlist" id="start3v" />
+                <label for="start3v" class="startlabel"> Power - OFF.</label>
+              </td>
+            </tr>
+            <tr>
+              <td class="std1">4</td>
+              <td class="std2">
+                <input type="checkbox" class="startlist" id="start4v" />
+                <label for="start4v" class="startlabel"> RTR BRK - OFF.</label>
+              </td>
+            </tr>
+          </table>
+          <table class="starttable">
+            <tr>
+              <td class="std1">5</td>
+              <td class="std2">
+                <input type="checkbox" class="startlist" id="start5v" />
+                <label for="start5v" class="startlabel">
+                  Parking brake - OUT.</label
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="std1">6</td>
+              <td class="std2">
+                <input type="checkbox" class="startlist" id="start6v" />
+                <label for="start6v" class="startlabel"> SAI - CAGED.</label>
+              </td>
+            </tr>
+            <tr>
+              <td class="std1">7</td>
+              <td class="std2">
+                <input type="checkbox" class="startlist" id="start7v" />
+                <label for="start7v" class="startlabel"> CMWS - SAFE.</label>
+              </td>
+            </tr>
+          </table>
+
+          <div class="clear"></div>
+          <h1>
+            PRE START &nbsp;<a class="uncheckstart"
+              >Uncheck all in start list.</a
+            >
+          </h1>
+          <table class="starttable">
+            <tr>
+              <td class="std1">1</td>
+              <td class="std2">
+                <input type="checkbox" class="startlist" id="start1p" />
+                <label for="start1p" class="startlabel">
+                  MSTR IGN - Batt.</label
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="std1">2</td>
+              <td class="std2">
+                <input type="checkbox" class="startlist" id="start102p" />
+                <label for="start102p" class="startlabel">
+                  Lighting test.</label
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="std1">3</td>
+              <td class="std2">
+                <input type="checkbox" class="startlist" id="start103p" />
+                <label for="start103p" class="startlabel"> Fire test.</label>
+              </td>
+            </tr>
+            <tr>
+              <td class="std1">4</td>
+              <td class="std2">
+                <input type="checkbox" class="startlist" id="start2p" />
+                <label for="start2p" class="startlabel"> APU - ON.</label>
+              </td>
+            </tr>
+          </table>
+          <table class="starttable">
+            <tr>
+              <td class="std1">5</td>
+              <td class="std2">
+                <input type="checkbox" class="startlist" id="start3p" />
+                <label for="start3p" class="startlabel">
+                  TSD -> Util, activate doppler.</label
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="std1">6</td>
+              <td class="std2">
+                <input type="checkbox" class="startlist" id="start4p" />
+                <label for="start4p" class="startlabel">
+                  Fuel page -> activate C Aux.</label
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="std1">7</td>
+              <td class="std2">
+                <input type="checkbox" class="startlist" id="start5p" />
+                <label for="start5p" class="startlabel"> SAI - UNCAGED.</label>
+              </td>
+            </tr>
+          </table>
+
+          <div class="clear"></div>
+          <br />
+          <a name="start" class="anchor"></a>
+          <hr />
+          <h1>
+            COLD START &nbsp;<a class="uncheckstart"
+              >Uncheck all in start list.</a
+            >
+          </h1>
+          <table class="starttable">
+            <tr>
+              <td class="std1">1</td>
+              <td class="std2">
+                <input type="checkbox" class="startlist" id="start1" />
+                <label for="start1" class="startlabel"> ENG 1 - START.</label>
+              </td>
+            </tr>
+            <tr>
+              <td class="std1">2</td>
+              <td class="std2">
+                <input type="checkbox" class="startlist" id="start2" />
+                <label for="start2" class="startlabel">
+                  Throttle 1 - IDLE.</label
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="std1">3</td>
+              <td class="std2">
+                <input type="checkbox" class="startlist" id="start3" />
+                <label for="start3" class="startlabel"> ENG 2 - START</label>
+              </td>
+            </tr>
+            <tr>
+              <td class="std1">4</td>
+              <td class="std2">
+                <input type="checkbox" class="startlist" id="start4" />
+                <label for="start4" class="startlabel">
+                  Throttle 2 - IDLE.</label
+                >
+              </td>
+            </tr>
+          </table>
+          <table class="starttable">
+            <tr>
+              <td class="std1">5</td>
+              <td class="std2">
+                <input type="checkbox" class="startlist" id="start5" />
+                <label for="start5" class="startlabel">
+                  TSD -> ENG, oil pressure below 70 psi.</label
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="std1">6</td>
+              <td class="std2">
+                <input type="checkbox" class="startlist" id="start6" />
+                <label for="start6" class="startlabel">
+                  Throttle 1 and 2 - FLY.</label
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="std1">7</td>
+              <td class="std2">
+                <input type="checkbox" class="startlist" id="start9" />
+                <label for="start9" class="startlabel"> APU - OFF.</label>
+              </td>
+            </tr>
+            <tr>
+              <td class="std1">8</td>
+              <td class="std2">
+                <input type="checkbox" class="startlist" id="start12" />
+                <label for="start12" class="startlabel">
+                  Parking brake - IN.</label
+                >
+              </td>
+            </tr>
+          </table>
+
+          <div class="clear"></div>
+
+          <a name="atc" class="anchor"></a>
+          <hr />
+          <h1>Air Traffic Control procedures</h1>
+          <div class="atcList">
+            STARTUP
+            <table>
+              <tr>
+                <td class="tdA1">
+                  Pilot: [AIRPORT] TOWER, this is [CALL SIGN] (formation)
+                  REQUEST STARTUP (intentions: eg. VFR DEPARTURE TRAINING AREA
+                  ALPHA)
+                </td>
+                <td class="tdA2">ATC: -</td>
+              </tr>
+              <tr>
+                <td class="tdA1">Pilot: -</td>
+                <td class="tdA2">
+                  ATC: [CALL SIGN] (formation) START UP APPROVED, QNH [XXXX]
+                  [CS] CONDITIONS
+                </td>
+              </tr>
+              <tr>
+                <td class="tdA1">Pilot: QNH (read back) [CALL SIGN]</td>
+                <td class="tdA2">ATC: -</td>
+              </tr>
+            </table>
+            <br />
+            CLEARANCE
+            <table>
+              <tr>
+                <td class="tdA1">Pilot: -</td>
+                <td class="tdA2">
+                  ATC: [CALL SIGN] REPORT READY TO COPY ATC CLEARANCE
+                </td>
+              </tr>
+              <tr>
+                <td class="tdA1">
+                  Pilot: [AIRPORT] TOWER, [CALL SIGN] READY FOR CLEARANCE
+                </td>
+                <td class="tdA2">ATC: -</td>
+              </tr>
+              <tr>
+                <td class="tdA1">Pilot: -</td>
+                <td class="tdA2">
+                  ATC: [CALL SIGN] (FORMATION) CLEARED FOR VFR DEPARTURE TO
+                  [ZONE] EXIT [REPORTING POINT] SQUAWK XXXX WHEN AIRBORNE
+                  CONTACT APPROACH CHANNEL 3
+                </td>
+              </tr>
+              <tr>
+                <td class="tdA1">Pilot: [READBACK]</td>
+                <td class="tdA2">ATC: -</td>
+              </tr>
+            </table>
+            <br />
+            TAXI
+            <table>
+              <tr>
+                <td class="green">TAXI BEFORE TAKEOFF</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="tdA1">
+                  Pilot: [AIRPORT] TOWER, [CALL SIGN] (FORMATION, N F-16) (AT
+                  PARKING XXX) REQUEST TAXI
+                </td>
+                <td class="tdA2">ATC: -</td>
+              </tr>
+              <tr>
+                <td class="tdA1">Pilot: -</td>
+                <td class="tdA2">
+                  ATC: [CALL SIGN] (FORMATION) TAXI TO HOLDING POINT RUNWAY XX
+                  VIA XY, SQUAWK IN SEQUENCE
+                </td>
+              </tr>
+              <tr>
+                <td class="tdA1">Pilot: [READBACK] SQUAWK IN SEQUENCE</td>
+                <td class="tdA2">ATC: -</td>
+              </tr>
+              <tr>
+                <td class="green">TAXI AFTER LANDING</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="tdA1">Pilot: [CALL SIGN] RUNWAY VACATED</td>
+                <td class="tdA2">ATC: -</td>
+              </tr>
+              <tr>
+                <td class="tdA1">Pilot: -</td>
+                <td class="tdA2">
+                  ATC: [CALL SIGN] TAXI VIA [A|B|C|D] TO STAND XX
+                </td>
+              </tr>
+              <tr>
+                <td class="tdA1">Pilot: VIA X TO STAND Y [CALL SIGN]</td>
+                <td class="tdA2">ATC: -</td>
+              </tr>
+            </table>
+            <br />
+            TAKEOFF
+            <table>
+              <tr>
+                <td class="tdA1">
+                  Pilot: [AIRPORT] TOWER, [CALL SIGN] READY FOR DEPARTURE
+                </td>
+                <td class="tdA2">ATC: -</td>
+              </tr>
+              <tr>
+                <td class="tdA1">Pilot: -</td>
+                <td class="tdA2">
+                  ATC: [CALL SIGN] WIND XXX DEGREES XX KNOTS RUNWAY XX CLEARED
+                  FOR TAKEOFF, REPORT AIRBORNE
+                </td>
+              </tr>
+              <tr>
+                <td class="tdA1">
+                  Pilot: RUNWAY XX CLEARED FOR TAKEOFF [CALL SIGN]
+                </td>
+                <td class="tdA2">ATC: -</td>
+              </tr>
+              <tr>
+                <td class="tdA1">Pilot: [CALLSIGN] AIRBORNE</td>
+                <td class="tdA2">ATC: [CALLSIGN] ROGER</td>
+              </tr>
+            </table>
+            <br />
+            DEPARTURE
+            <table>
+              <tr>
+                <td class="tdA1">
+                  Pilot: [AIRPORT] APPROACH, [CALLSIGN] VFR DEPARTURE EXIT XXX
+                </td>
+                <td class="tdA2">ATC: [CALLSIGN] ROGER</td>
+              </tr>
+              <tr>
+                <td class="tdA1">Pilot: -</td>
+                <td class="tdA2">
+                  ATC: [CALL SIGN] LEAVING THE ZONE, REGIONAL QNH XXXX, (MONITOR
+                  [AIRPORT] RADAR ON CHANNEL 11)
+                </td>
+              </tr>
+              <tr>
+                <td class="tdA1">
+                  Pilot: XXXX ([AIRPORT] RADAR CHANNEL 11) [CALL SIGN]
+                </td>
+                <td class="tdA2">ATC: -</td>
+              </tr>
+            </table>
+            <br />
+            ARRIVAL
+            <table>
+              <tr>
+                <td class="tdA1">
+                  Pilot: [AIRPORT] APPROACH, [CALL SIGN], (position, altitude)
+                  REQUEST LANDING INSTRUCTIONS FOR VISUAL APPROACH
+                </td>
+                <td class="tdA2">ATC: -</td>
+              </tr>
+              <tr>
+                <td class="tdA1">Pilot: -</td>
+                <td class="tdA2">
+                  ATC: [CALL SIGN] [RUNWAY] QNH XXXX, [CONDITION] REPORT ENTRY
+                  [XXX]
+                </td>
+              </tr>
+              <tr>
+                <td class="tdA1">
+                  Pilot: [RUNWAY] [QNH] REPORTING ENTRY [XXX] [CALL SIGN]
+                </td>
+                <td class="tdA2">ATC: -</td>
+              </tr>
+              <tr>
+                <td class="tdA1">Pilot: [CALL SIGN] ENTERING XXX</td>
+                <td class="tdA2">ATC: -</td>
+              </tr>
+              <tr>
+                <td class="tdA1">Pilot: -</td>
+                <td class="tdA2">
+                  ATC: [CALL SIGN] CONTACT [AIRPORT] TOWER CHANNEL 2
+                </td>
+              </tr>
+              <tr>
+                <td class="tdA1">Pilot: TOWER CHANNEL 2 [CALL SIGN]</td>
+                <td class="tdA2">ATC: -</td>
+              </tr>
+            </table>
+            <br />
+            HANDOVER TO TOWER
+            <table>
+              <tr>
+                <td class="tdA1">Pilot: -</td>
+                <td class="tdA2">
+                  ATC: [CALL SIGN] WHEN VACATING THE RUNWAY, CONTACT [AIRPORT]
+                  TOWER CHANNEL 2
+                </td>
+              </tr>
+              <tr>
+                <td class="tdA1">Pilot: [READBACK]</td>
+                <td class="tdA2">ATC: -</td>
+              </tr>
+            </table>
+            <br />
+            LANDING (VFR)
+            <table>
+              <tr>
+                <td class="tdA1">
+                  Pilot: [AIRPORT] TOWER [CALL SIGN] (FORMATION) AT ENTRY XXX
+                  XXXXFT FOR LANDING / TOUCH AND GO
+                </td>
+                <td class="tdA2">ATC: -</td>
+              </tr>
+              <tr>
+                <td class="tdA1">Pilot: -</td>
+                <td class="tdA2">
+                  ATC: [CALL SIGN] (FORMATION) JOIN INITIAL [RUNWAY NUMBER]
+                  (LEFT HAND) BREAK QNH XXX
+                </td>
+              </tr>
+              <tr>
+                <td class="tdA1">Pilot: QNH XXXX [CALL SIGN]</td>
+                <td class="tdA2">ATC: -</td>
+              </tr>
+              <tr>
+                <td class="tdA1">
+                  Pilot: [CALL SIGN] (FORMATION) INITIAL RUNWAY XX FOR LANDING
+                </td>
+                <td class="tdA2">ATC: -</td>
+              </tr>
+              <tr>
+                <td class="tdA1">Pilot: -</td>
+                <td class="tdA2">
+                  ATC: [CALL SIGN] (FORMATION) BREAK [number of how many people
+                  are in front] WIND XXX DEGREES XX KNOTS
+                </td>
+              </tr>
+              <tr>
+                <td class="tdA1">Pilot: BREAK [NUMBER] [CALL SIGN]</td>
+                <td class="tdA2">ATC: -</td>
+              </tr>
+              <tr>
+                <td class="tdA1">Pilot: [CALL SIGN] ON THE BREAK</td>
+                <td class="tdA2">ATC: -</td>
+              </tr>
+              <tr>
+                <td class="tdA1">Pilot: -</td>
+                <td class="tdA2">ATC: [CALL SIGN] FINAL [NUMBER]</td>
+              </tr>
+              <tr>
+                <td class="tdA1">Pilot: FINAL [NUMBER], [CALL SIGN]</td>
+                <td class="tdA2">ATC: -</td>
+              </tr>
+              <tr>
+                <td class="tdA1">Pilot: [CALL SIGN] FINAL GEAR DOWN TO LAND</td>
+                <td class="tdA2">ATC: -</td>
+              </tr>
+              <tr>
+                <td class="tdA1">Pilot: -</td>
+                <td class="tdA2">ATC: [CALL SIGN] RUNWAY XX CLEARED TO LAND</td>
+              </tr>
+              <tr>
+                <td class="tdA1">
+                  Pilot: RUNWAY XX CLEARED TO LAND [CALL SIGN]
+                </td>
+                <td class="tdA2">ATC: -</td>
+              </tr>
+            </table>
+            <hr />
+          </div>
+        </div>
+      </div>
+
+      <div class="clear"></div>
+    </div>
+
+    <div id="overlay">
+      <div id="overlayContent"></div>
+    </div>
+
+    <div id="kneeFolderBtn" title="Toggle kneeboard folders">📁</div>
+    <div id="kneeBtn" title="Toggle kneeboard">📋️</div>
+    <div id="kneeboard">
+      <div id="emptyknee">Upload kneeboard folder in the left side menu.</div>
+    </div>
+
+    <canvas id="drawing"></canvas>
+    <div id="drawBtn" title="Toggle notepad">✏️</div>
+    <div id="toolbarDraw">
+      <label for="stroke">Color</label><br />
+      <input id="stroke" name="stroke" type="color" value="#FFFFFF" /><br />
+      <button id="clear">Clear</button>
+      <button id="clearInput">Clear input</button>
+      <textarea
+        id="drawInput"
+        placeholder="You can type in this field..."
+      ></textarea>
+    </div>
+
+    <script src="script.js?v=1.0.3m" type="text/javascript"></script>
+  </body>
+</html>
