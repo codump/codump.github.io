@@ -21,7 +21,7 @@ date: 25-08-21 15:15:00 +0200
 last_modified_at: 26-04-14 15:14:00 +0200
 categories: [Project, ConLog]
 tags: [npm, console, log, Node.js, JavaScript]
-pin: true
+pin: false
 full_text: false
 comments: true
 ---
